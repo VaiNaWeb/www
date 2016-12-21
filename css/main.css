@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: normal 16px sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+}
+@media (min-width: 667px) {
+  .header {
+    padding: 2em 0;
+  }
+}
+.header img {
+  width: 30%;
+  max-height: 120px;
+  animation: intro 0.3s 2 alternate ease;
+}
+.header img:hover {
+  animation: dancing 0.3s 2 alternate ease;
+  cursor: pointer;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2.25em 0;
+  background: #f5f5f5;
+}
+@media (min-width: 667px) {
+  .intro {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+.intro__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+@media (min-width: 667px) {
+  .intro__item {
+    width: 30%;
+  }
+}
+@media (min-width: 667px) {
+  .intro__item:nth-child(2) {
+    order: 1;
+  }
+}
+.intro__item__image {
+  max-height: 180px;
+  transition: 0.2s;
+}
+.intro__item__image:hover {
+  cursor: pointer;
+  transform: translate3d(0px, 0px, 0px) scale(1.2, 1.2) rotate(5deg);
+}
+.intro__item__title {
+  margin: 0.25em 0;
+  color: #282b87;
+  text-transform: lowercase;
+  font: 700 3em 'Montserrat', sans-serif;
+}
+.intro__item__description {
+  width: 80%;
+  text-align: center;
+  color: #f05a20;
+  font: 400 1.25em 'Montserrat', sans-serif;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2.25em 0 0;
+  background: #282b87;
+}
+.about__description {
+  width: 90%;
+  color: #fff;
+  font: 400 0.88em 'Montserrat', sans-serif;
+}
+@media (min-width: 667px) {
+  .about__description {
+    width: 70%;
+    font: 400 1em/1.5 'Montserrat', sans-serif;
+  }
+}
+.about__btn {
+  width: 60%;
+  height: 45px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font: 400 1em 'Montserrat', sans-serif;
+  background: #fda516;
+}
+@media (min-width: 667px) {
+  .about__btn {
+    width: 20%;
+    margin: 3.75em 0 1.5em;
+  }
+}
+.about__map {
+  margin: 1.5em 0 0 0;
+}
+@media (min-width: 667px) {
+  .about__map {
+    position: relative;
+    top: 3em;
+    width: 70%;
+    height: 350px;
+  }
+}
+.footer {
+  width: 100%;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fcaf17;
+}
+@media (min-width: 667px) {
+  .footer__links {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 8em 0;
+  }
+}
+.footer__links a {
+  display: inline-block;
+  margin: 2.5em 0;
+  text-decoration: none;
+  color: #282b87;
+  font: 400 1em 'Montserrat', sans-serif;
+}
+@media (min-width: 667px) {
+  .footer__links a {
+    margin: 0 0.75em;
+  }
+}
+.footer__partners {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1.5em 0;
+}
+@media (min-width: 667px) {
+  .footer__partners {
+    justify-content: center;
+    padding: 3em 0;
+  }
+}
+.footer__partners h3 {
+  width: 100%;
+  text-align: center;
+  color: #c5c5c5;
+  font: 400 1.5em 'Montserrat', sans-serif;
+}
+.footer__partners img {
+  width: 180px;
+  height: 60px;
+  margin: 0 1em;
+}
+.reaction::after {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  left: 30%;
+  content: "";
+  opacity: 0;
+  background: url("../img/heart.svg") center center/contain no-repeat;
+}
+.reaction:hover::after {
+  animation: flyOn 0.8s ease;
+}
+@media (min-width: 667px) {
+  .reaction:hover::after {
+    height: 60px;
+    max-width: 300px;
+    margin: 0 1.5em;
+  }
+}
+.about__description,
+.about__btn,
+.footer a {
+  opacity: 0.05;
+  transition: 0.5s;
+  transform: translateY(30px);
+}
+.about__map {
+  transition: 0.5s;
+  transform: translateY(30px);
+}
+.content--is-ative .about__description,
+.content--is-ative#about button,
+.content--is-ative .about__map,
+.content--is-ative a {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.intro__item__image {
+  animation: fadeIn 0.5s 0.2s ease;
+}
+.intro__item__title {
+  animation: fadeIn 0.5s 0.3s ease;
+}
+.intro__item__description {
+  animation: fadeIn 0.5s 0.4s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes flyOn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px, -40px, -30px) scale(1.3, 1.3);
+  }
+}
+@keyframes dancing {
+  50% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleX(1.1);
+  }
+}
+@keyframes intro {
+  50% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleX(1.1);
+  }
+}
