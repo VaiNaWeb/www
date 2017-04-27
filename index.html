@@ -1,63 +1,164 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
-	<title>Vai na Web</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="css/main.css">
+  <title>Vai na Web</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <script src="https://use.typekit.net/eqk2gym.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
-	<header id="header" class="header">
-		<img src="img/vainaweb.svg" alt="Vai na Web">
-	</header>
-
-	<section id="intro" class="intro">
-		<div class="intro__item">
-			<img src="img/aprender.png" alt="Crie sites" class="intro__item__image">
-			<h2 class="intro__item__title">Aprender</h2>
-			<p class="intro__item__description">Crie sites incríveis que funcione em todos os tamanhos de tela.</p>
-		</div>
-		<div class="intro__item">
-			<img src="img/mostrar.png" alt="Mostre seu trabalho" class="intro__item__image">
-			<h2 class="intro__item__title">Mostrar</h2>
-			<p class="intro__item__description">Desenvolva seu portfólio e mostre seu trabalho pro mundo!!</p>
-		</div>
-		<div class="intro__item">
-			<img src="img/ajudar.png" alt="Ajude organizações" class="intro__item__image">
-			<h2 class="intro__item__title">Ajudar</h2>
-			<p class="intro__item__description">Aprenda fazendo e ajude organizações comunitárias a conquistarem ainda mais visibilidade!!</p>
-		</div>
-	</section>
-
-	<section id="about" class="about">
-		<p class="about__description">
-			O Vai Na Web é um curso de desenvolvimento
-			de páginas web e cidadania dentro de
-			organizações de base comunitária para jovens
-			de 16 a 29 anos que estão iniciando a carreira e
-			querem aprender fazendo.
-		</p>
-
-		<button class="about__btn">Ver PDF CPX ALEMAO</button>
-
-		<iframe class="about__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.4405739120457!2d-43.287196449289794!3d-22.860177841883633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997c7b48e047c7%3A0x75e759ff43f554c9!2sEDUCAP!5e0!3m2!1spt-BR!2sbr!4v1480440475641" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-	</section>
-
-	<footer id="footer" class="footer">
-		<div class="footer__links">
-			<a href="#">vainaweb@precisaser.org</a>
-			<a href="https://www.facebook.com/vainaweb/">Facebook</a>
-		</div>
-		
-		<div class="footer__partners">
-			<h3>Realização</h3>
-			<a class="reaction" href="http://www.precisaser.com.br/"><img src="img/precisaser.svg" alt="Precisa Ser"></a>
-			<a class="reaction" href="https://www.facebook.com/educap.org/"><img src="img/educap.svg" alt="Educap"></a>
-		</div>
-	</footer>
-
-	<script src='js/main.js'></script>
-	
+  <main>
+    <section class="hero">
+      <img class="imgfallback" src="assets/imgfallback.jpg">
+      <video autoplay loop width="426" height="240">
+        <source src="assets/videosite2.mp4" type="video/mp4">
+      </video>
+      <header class="header-hero">
+        <img class="logo-hero" src="assets/logo.svg" alt="logo">
+        <p class="header-description tk-ministry">
+          O Vai Na Web é um curso de desenvolvimento de páginas web e cidadania dentro de organizações de base comunitária para jovens de 16 a 29 anos que estão iniciando a carreira e querem aprender fazendo.
+        </p>
+      </header>
+      <nav class="nav-hero">
+      <!-- temporariamente esses botões não existirão mais.
+        <a href="#aprender" class="btn-hero tk-ministry">Aprender</a>
+        <a href="#ajudar" class="btn-hero tk-ministry">Ajudar</a>
+        <a href="#compartilhar" class="btn-hero tk-ministry">Compartilhar</a> -->
+        <a href="https://www.facebook.com/vainaweb/" class="btn-hero tk-ministry">Fique por dentro!</a>
+      </nav>
+    </section>
+    <section id="aprender" class="aprender">
+      <header>
+        <nav class="nav-fixed">
+          <img class="logo" src="assets/logo.svg" alt="logo">
+          <ul>
+            <li><a href="#aprender" class="btn-nav tk-ministry">Aprender</a></li>
+            <li><a href="#ajudar" class="btn-nav tk-ministry">Ajudar</a></li>
+            <li><a href="#compartilhar" class="btn-nav tk-ministry">Compartilhar</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h1 class="aprender-title tk-ministry">Aprender</h1>
+      <p class="aprender-description tk-ministry">Todo conteúdo do Vai na Web está disponível online. E você pode encontrar tudo aqui dentro dessa mochila!</p>
+      <img class="aprender-img" src="assets/icones-02.svg" alt="mochila">
+    </section>
+    <section id="ajudar" class="ajudar">
+      <h1 class="tk-ministry">Ajudar</h1>
+      <p class="tk-ministry">
+        Através de parcerias com organizações que atuam com população em estado de vulnerabilidade social levamos o conhecimeto e a aplicação da tecnologia para quem irá fvazer bom proveito dela contribuindo para uma sociedade mais igualitária para todas e todos :)
+      </p>
+      <p class="tk-ministry">
+        Conheça nossos parceiros!
+      </p>
+      <a class="tk-ministry" href="#">site do parceiro 1</a>
+      <a class="tk-ministry" href="#">site do parceiro I1</a>
+    </section>
+    <section id="compartilhar" class="compartilhar">
+      <h1 class="tk-ministry">Compartilhar</h1>
+      <p class="tk-ministry">
+        Conheça quem aprende e ensina no Vai na Web e saiba quais os trabalhos mais recentes da galera!
+      </p>
+      <div class="tutores">
+        <h2 class="tk-ministry">Tutores</h2>
+        <div class="tutores-container">
+          <img src="http://placehold.it/100x100" alt="rômulo">
+          <p class="tk-ministry">uma frase aqui</p>
+          <img src="http://placehold.it/100x100" alt="dali">
+          <p class="tk-ministry">uma frase aqui</p>
+        </div>
+      </div>
+      <div class="alunos">
+        <h2 class="tk-ministry">Alunos</h2>
+          <div class="alunos-container">
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+            <div class="alunos-item">
+              <img src="http://placehold.it/100x100" alt="sabrina">
+              <p class="tk-ministry">uma frase aqui</p>
+            </div>
+          </div>
+      </div>
+    </section>
+    <footer>
+      <a class="tk-ministry" href="https://www.facebook.com/vainaweb">facebook</a>
+      <a class="tk-ministry" href="http://www.vainaweb.com.br">www.vainaweb.com.br</a>
+    </footer>
+  </main>
 </body>
 </html>
